@@ -1,0 +1,210 @@
+.navbar-links li {
+  list-style-type: none;
+  display: inline;
+  padding: 2em;
+}
+
+.navbar-links {
+  background-color: #5167af;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 6fr;
+}
+
+.right-alligned-items {
+  text-align: center;
+  padding: 33px;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 8fr 2fr;
+}
+
+.product-card {
+  margin: 15px;
+  text-align: center;
+}
+
+#products {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+}
+
+.product-avatar {
+  width: 250px;
+  height: 200px;
+}
+
+.product-detail-avatar {
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
+}
+
+.product-details-container {
+  text-align: center;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  margin: -75px 0 0 -75px;
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #3498db;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Add animation to "page content" */
+.root-container {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+@media only screen and (min-width: 320px) {
+  /* For mobiles: */
+  #products,
+.navbar-links {
+    display: grid;
+    grid-template-columns: 12fr;
+  }
+
+  .right-alligned-items {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  #products {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+  }
+
+  .navbar-links {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 6fr;
+  }
+}
+.filter-container {
+  margin-top: 15px;
+}
+
+.filter-container div {
+  margin: 30px;
+}
+.filter-container div > select {
+  border: 0px;
+  border-bottom: 1px solid;
+  padding-right: 50px;
+  width: 100%;
+}
+
+.filter-label {
+  margin: 30px;
+}
+
+.product-label {
+  text-align: left;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.product-price {
+  text-align: right;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: #3f3d3d;
+  font-size: 15px;
+}
+
+.product-details-btn,
+.go-back-btn {
+  padding: 10px;
+  background: black;
+  color: white;
+  border-radius: 20px;
+}
+
+.product-detail-price {
+  margin: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  color: #3f3d3d;
+  font-weight: bolder;
+}
+
+.product-detail-label {
+  margin: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.in-stock-label {
+  margin: 10px;
+  font-family: "Times New Roman", Times, serif;
+  background: green;
+  color: white;
+  width: 15%;
+  left: 42%;
+  position: relative;
+}
+
+.out-of-stock-label {
+  margin: 10px;
+  font-family: "Times New Roman", Times, serif;
+  background: red;
+  color: white;
+  width: 15%;
+  left: 42%;
+  position: relative;
+}
+
+/*# sourceMappingURL=dash.css.map */
