@@ -84,7 +84,7 @@ function showProductDetails(product) {
     productDetailsContainer.append(productDetailAvatarContainer, productDetail);
 
     let productImg = document.createElement('img');
-    productImg.src = 'Showroom.jpg';
+    productImg.src = '../asset/Showroom.jpg';
     productImg.className += 'product-detail-avatar';
     productDetailAvatarContainer.appendChild(productImg);
 
