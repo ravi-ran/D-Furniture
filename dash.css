@@ -1,0 +1,35 @@
+.navbar-links li {
+  list-style-type: none;
+  display: inline;
+  padding: 2em;
+}
+
+.navbar-links {
+  background-color: #5167af;
+}
+
+.right-alligned-items {
+  float: right;
+}
+
+.product-container, .product-details-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 8fr 2fr;
+}
+
+.product-card {
+  margin: 5px;
+  box-shadow: 1px 2px 1px 2px #8391bd;
+}
+
+#products {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+}
+
+.product-avatar {
+  width: 250px;
+  height: 200px;
+}
+
+/*# sourceMappingURL=dash.css.map */
